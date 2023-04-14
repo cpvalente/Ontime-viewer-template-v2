@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ontime demo</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>ONTIME VIEWER TEMPLATE</h1>
+    <div class="container">
+      <div class="card">
+        <span class="title">Running timer</span>
+        <code id="current">-</code>
+        <p>
+          <span class="title">Last message received</span>
+          <span id="timestamp">-</span>
+        </p>
+        <p>
+          <span class="title">Help? See docs</span>
+          <a
+            href="https://cpvalente.gitbook.io/ontime/control-and-feedback/websocket-api"
+            target="_blank"
+            >https://cpvalente.gitbook.io/ontime/control-and-feedback/websocket-api</a
+          >
+        </p>
+      </div>
+
+      <details class="card" open>
+        <summary>
+          Timer
+          <div>
+            <span class="description">Description</span>Object with all timer
+            values
+          </div>
+        </summary>
+        <code id="timer">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          Playback
+          <div>
+            <span class="description">Description</span>State of Ontime playback
+          </div>
+        </summary>
+        <code id="playback">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          Messages timer
+          <div>
+            <span class="description">Description</span>Private messages to
+            stage timer screens
+          </div>
+        </summary>
+        <code id="messages-timer">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          Messages public
+          <div>
+            <span class="description">Description</span>Private messages to
+            public screens
+          </div>
+        </summary>
+        <code id="messages-public">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          Lower third message
+          <div>
+            <span class="description">Description</span>Private messages to
+            lower thirds
+          </div>
+        </summary>
+        <code id="messages-lower">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          On Air
+          <div>
+            <span class="description">Description</span>Whether On Air toggle is
+            on
+          </div>
+        </summary>
+        <code id="onAir">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          Loaded
+          <div>
+            <span class="description">Description</span>Information on loaded
+            event and rundown
+          </div>
+        </summary>
+        <code id="loaded">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          Titles
+          <div>
+            <span class="description">Description</span>Ontime titles for
+            current and next event
+          </div>
+        </summary>
+        <code id="titles">-</code>
+      </details>
+
+      <details class="card" open>
+        <summary>
+          Public Titles
+          <div>
+            <span class="description">Description</span>Ontime titles for
+            current and next event, filtered for public events
+          </div>
+        </summary>
+        <code id="public-titles">-</code>
+      </details>
+    </div>
+  </body>
+  <script src="./app.js" type="module"></script>
+</html>
