@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# misc
+.DS_Store
+*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# vscode stuff
+.vscode/*
+ontime.code-workspace
+
+# webstorm stuff
+.idea/*
