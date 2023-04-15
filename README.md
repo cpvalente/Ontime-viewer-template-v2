@@ -1,7 +1,7 @@
 # Ontime viewer template v2
 A template for creating custom viewers using ontime data
 
-![Viewer Template](https://github.com/cpvalente/ontime-viewer-template/blob/main/.github/viewer-template.png)
+![Viewer Template](https://github.com/cpvalente/ontime-viewer-template-v2/blob/main/.github/viewer-template.png)
 
 Ontime broadcasts its data over websockets.
 This allows you to build your own viewers by leveranging basic knowledge of HTML + CSS + Javascript (or any other language that can run in the browser).
