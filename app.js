@@ -57,8 +57,10 @@ socket.addEventListener('message', (event) => {
       lowerMessage,
       onAir,
       loaded,
-      titles,
-      titlesPublic,
+      eventNow,
+      eventNext,
+      publicEventNow,
+      publicEventNext,
     } = payload;
 
     // being explicit here for sake of clarity
@@ -79,20 +81,9 @@ socket.addEventListener('message', (event) => {
 
     if (loaded) updateDOM('loaded', loaded);
 
-    if (titles) updateDOM('titles', titles);
-
-    if (titlesPublic) updateDOM('public-titles', titlesPublic);
+    if (eventNow) updateDOM('event-now', eventNow);
+    if (eventNext) updateDOM('event-next', eventNext);
+    if (publicEventNow) updateDOM('public-event-now', publicEventNow);
+    if (publicEventNext) updateDOM('public-event-next', publicEventNext);
   }
 });
-
-// register listeners
-/*
-socket.on('messages-timer', (msg) => updateDOM('messages-timer', msg));
-socket.on('messages-public', (msg) => updateDOM('messages-public', msg));
-socket.on('messages-lower', (msg) => updateDOM('messages-lower', msg));
-socket.on('timer', (msg) => updateDOM('timer', msg));
-socket.on('onAir', (msg) => updateDOM('onAir', msg));
-socket.on('titles', (msg) => updateDOM('titles', msg));
-socket.on('publictitles', (msg) => updateDOM('publictitles', msg));
-
-*/

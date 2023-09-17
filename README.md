@@ -9,6 +9,9 @@ This allows you to build your own viewers by leveranging basic knowledge of HTML
 This repository is a template to get you started.
 For more information visit the docs
 
+## Changes
+This version of the template is up to date from v2.9.0
+
 ## Links
 - [Download Ontime](https://www.getontime.no/)
 - [Ontime Github](https://github.com/cpvalente/ontime)
